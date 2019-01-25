@@ -39,6 +39,6 @@ $ flask run
 Sending `example_trip.json` via a POST http request to the `/fictionalize` subdomain will return sth like:
 
 ```
-[{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark", "fiction": "At 1:00, they were passing by Empire State. The landmark felt astonishing. It also made them think about None."},
- {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park", "fiction": "At 1:04, they were passing by Bryant Park. The park felt astonishing. It also made them think about a frisbee."}]
+[{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark", "fiction": "At 1:00, they were passing by Empire State. The landmark felt overrated. It also made them think about road to Damascus."}, 
+ {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park", "fiction": "At 1:04, they were passing by Bryant Park. The park felt boring. It also made them think about animal."}]
 ```
