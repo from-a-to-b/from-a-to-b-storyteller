@@ -60,7 +60,8 @@ Sending `example_trip.json` via a POST http request to the `/fictionalize` subdo
           osm_id: poi.osm_id,
           code: poi.code,
           fclass: poi.fclass,
-          name: poi.name
+          name: poi.name,
+          location: [lng, lat]
         },
         fiction: ""
       },
