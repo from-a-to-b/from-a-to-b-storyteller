@@ -1,1 +1,36 @@
-[{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark"}, {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park"}]
+{
+  "success": true, 
+  "result": {
+    "trip": {
+      "total_time": 145, 
+      "pickup_time": 1448983253, 
+      "dropoff_time": 1448983398, 
+      "type": "taxi", 
+      "path": [
+        [
+          -73.9659576416016, 
+          40.7585144042969,  
+          1448983253
+        ],
+        [
+          -73.965891,
+          40.758486,
+          1448983253.7527905
+        ]
+      ]
+    },
+    "pois": [
+      {
+        "osm_id": 2409398826, 
+        "code": 2301,
+        "fclass": "restaurant", 
+        "name": "Firehouse Tavern", 
+        "location": [
+          -73.9727433,
+          40.7860514
+        ],
+        "timestamp": 1448983253
+      }
+    ]
+  }
+}
