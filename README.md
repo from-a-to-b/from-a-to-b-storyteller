@@ -42,3 +42,30 @@ Sending `example_trip.json` via a POST http request to the `/fictionalize` subdo
 [{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark", "fiction": "At 1:00, they were passing by Empire State. The landmark felt overrated. It also made them think about road to Damascus."}, 
  {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park", "fiction": "At 1:04, they were passing by Bryant Park. The park felt boring. It also made them think about animal."}]
 ```
+
+## Ideal return data structure from wy..
+```javascript
+{
+  success: true, 
+  trip: {
+    total_time: 145, // seconds
+    pickup_time: 1448983253, // unix time
+    dropoff_time: 1448983398, // unix time
+    type: "taxi", // taxi, bike
+    sequence: [
+      { 
+        location: [lng, lat],
+        timestamp: unix timeframe
+        poi: {
+          osm_id: poi.osm_id,
+          code: poi.code,
+          fclass: poi.fclass,
+          name: poi.name
+        },
+        fiction: ""
+      },
+      ...
+    ]
+  }
+}
+```
