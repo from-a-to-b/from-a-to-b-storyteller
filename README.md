@@ -29,20 +29,9 @@ $ flask run
 
 4. Test
 
-`example_trip.json` looks like this:
+$ python client.py
 
-```
-[{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark"}, 
- {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park"}]
-```
-
-Sending `example_trip.json` via a POST http request to the `/fictionalize` subdomain will return sth like:
-
-```
-[{"timestamp": "1:00", "POI_name": "Empire State", "POI_type": "landmark", "fiction": "At 1:00, they were passing by Empire State. The landmark felt overrated. It also made them think about road to Damascus."}, 
- {"timestamp": "1:04", "POI_name": "Bryant Park", "POI_type": "park", "fiction": "At 1:04, they were passing by Bryant Park. The park felt boring. It also made them think about animal."}]
-```
-
+## 데이터 형식
 
 스토리텔러로 넘어가기 직전 데이터의 예시입니다. 이전과 달라진 점은 1. path 데이터를 따로 뽑아오지 않고 POI와 POI를 패스에 프로젝션한 포인트만 가지고 이야기를 만들수 있게 했습니다. 즉 포인트 A에서 B 사이의 주변에 (15m) 있는 POI를 긁어온 후, 그 POI들을 A-B 패스 위에 얹히고 그것을 시간순서로 배열했습니다. 이렇게 만들면 따로 Path를 불러올 필요없이 POI의 배열순서가 패스의 순서와 같게 됩니다. 즉 POI를 따라가면 이야기가 되는 방식이 되도록 했습니다. 스토리텔러는 여기에서 좋은 POI를 순차적으로 참조해가면서 만들면 되겠지라는 생각으로..? 스토리텔러는 여기에서 일단 pois 배열에서 fiction 오브젝트를 추가한다는 방식으로 가면 좋지 않을까 싶고요.
 

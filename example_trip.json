@@ -1,36 +1,39 @@
 {
-  "success": true, 
-  "result": {
-    "trip": {
-      "total_time": 145, 
-      "pickup_time": 1448983253, 
-      "dropoff_time": 1448983398, 
-      "type": "taxi", 
-      "path": [
-        [
-          -73.9659576416016, 
-          40.7585144042969,  
-          1448983253
-        ],
-        [
-          -73.965891,
-          40.758486,
-          1448983253.7527905
-        ]
-      ]
+  "total_time": 2978,
+  "pickup_time": 1449079362,
+  "dropoff_time": 1449082340,
+  "type": "taxi",
+  "pois": [{
+      "osm_id": 2610440263,
+      "code": 2004,
+      "fclass": "post_box",
+      "name": null,
+      "location": [
+        -73.9832839,
+        40.7612791
+      ],
+      "index": 0,
+      "projected_point_on_path": [
+        -73.983374,
+        40.761148
+      ],
+      "timestamp": 1449079365.1731405
     },
-    "pois": [
-      {
-        "osm_id": 2409398826, 
-        "code": 2301,
-        "fclass": "restaurant", 
-        "name": "Firehouse Tavern", 
-        "location": [
-          -73.9727433,
-          40.7860514
-        ],
-        "timestamp": 1448983253
-      }
-    ]
-  }
+    {
+      "osm_id": 2610440252,
+      "code": 2301,
+      "fclass": "restaurant",
+      "name": "TGI Fridays",
+      "location": [
+        -73.9829819,
+        40.7611131
+      ],
+      "index": 2,
+      "projected_point_on_path": [
+        -73.980418,
+        40.759911
+      ],
+      "timestamp": 1449079455.6773279
+    }
+  ]
 }
